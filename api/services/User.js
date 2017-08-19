@@ -164,6 +164,11 @@ var model = {
             data.save(function () {});
         });
     },
+    /**
+     * This function get all the media from the id.
+     * @param {UserId} UserID any number
+     * @returns {Array Of Media} that number, plus one.
+     */
     getAllMedia: function (data, callback) {
 
     }
