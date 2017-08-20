@@ -11,8 +11,6 @@ module.exports = {
         req.file("file").upload({
             maxBytes: 10000000 // 10 MB Storage 1 MB = 10^6
         }, function (err, uploadedFile) {
-            console.log(err);
-            console.log(uploadedFile);
             if (err) {
                 res.callback(err);
             } else if (uploadedFile && uploadedFile.length > 0) {
