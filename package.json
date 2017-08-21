@@ -1,7 +1,7 @@
 {
   "name": "nodeapp",
   "private": true,
-  "version": "0.0.1",
+  "version": "2.0.0",
   "description": "A Wohlig Application",
   "keywords": [],
   "dependencies": {

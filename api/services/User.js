@@ -86,7 +86,6 @@ module.exports = mongoose.model('User', schema);
 
 var exports = _.cloneDeep(require("sails-wohlig-service")(schema, "user", "user"));
 var model = {
-
     existsSocial: function (user, callback) {
         var Model = this;
         Model.findOne({
@@ -166,8 +165,9 @@ var model = {
     },
     /**
      * This function get all the media from the id.
-     * @param {UserId} UserID any number
-     * @returns {Array Of Media} that number, plus one.
+     * @param {userId} data
+     * @param {callback} callback
+     * @returns  that number, plus one.
      */
     getAllMedia: function (data, callback) {
 
