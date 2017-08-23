@@ -1,14 +1,27 @@
 {
   "functions": [
     {
+      "name": "getTushar",
+      "param": null,
+      "line": 3,
+      "character": 26,
+      "last": 5,
+      "lastcharacter": 6,
+      "metrics": {
+        "complexity": 1,
+        "parameters": 0,
+        "statements": 0
+      }
+    },
+    {
       "name": "loginFacebook",
       "param": [
         "req",
         "res"
       ],
-      "line": 3,
+      "line": 6,
       "character": 30,
-      "last": 8,
+      "last": 11,
       "lastcharacter": 6,
       "metrics": {
         "complexity": 1,
@@ -22,9 +35,9 @@
         "req",
         "res"
       ],
-      "line": 9,
+      "line": 13,
       "character": 28,
-      "last": 20,
+      "last": 24,
       "lastcharacter": 6,
       "metrics": {
         "complexity": 2,
@@ -38,9 +51,9 @@
         "req",
         "res"
       ],
-      "line": 21,
+      "line": 25,
       "character": 24,
-      "last": 27,
+      "last": 31,
       "lastcharacter": 6,
       "metrics": {
         "complexity": 2,
@@ -54,9 +67,9 @@
         "req",
         "res"
       ],
-      "line": 28,
+      "line": 32,
       "character": 20,
-      "last": 47,
+      "last": 51,
       "lastcharacter": 6,
       "metrics": {
         "complexity": 1,
@@ -67,9 +80,9 @@
     {
       "name": "(empty)",
       "param": null,
-      "line": 39,
+      "line": 43,
       "character": 44,
-      "last": 43,
+      "last": 47,
       "lastcharacter": 10,
       "metrics": {
         "complexity": 1,
@@ -83,9 +96,9 @@
         "err",
         "stream"
       ],
-      "line": 44,
+      "line": 48,
       "character": 45,
-      "last": 46,
+      "last": 50,
       "lastcharacter": 10,
       "metrics": {
         "complexity": 1,
@@ -99,9 +112,9 @@
         "req",
         "res"
       ],
-      "line": 48,
+      "line": 52,
       "character": 31,
-      "last": 91,
+      "last": 95,
       "lastcharacter": 6,
       "metrics": {
         "complexity": 3,
@@ -114,9 +127,9 @@
       "param": [
         "n"
       ],
-      "line": 53,
+      "line": 57,
       "character": 35,
-      "last": 56,
+      "last": 60,
       "lastcharacter": 14,
       "metrics": {
         "complexity": 1,
@@ -131,9 +144,9 @@
         "stdout",
         "stderr"
       ],
-      "line": 55,
+      "line": 59,
       "character": 69,
-      "last": 55,
+      "last": 59,
       "lastcharacter": 92,
       "metrics": {
         "complexity": 1,
@@ -147,9 +160,9 @@
         "Model",
         "key"
       ],
-      "line": 57,
+      "line": 61,
       "character": 57,
-      "last": 63,
+      "last": 67,
       "lastcharacter": 14,
       "metrics": {
         "complexity": 1,
@@ -163,9 +176,9 @@
         "obj",
         "callback"
       ],
-      "line": 80,
+      "line": 84,
       "character": 46,
-      "last": 85,
+      "last": 89,
       "lastcharacter": 14,
       "metrics": {
         "complexity": 1,
@@ -180,9 +193,9 @@
         "data2",
         "data3"
       ],
-      "line": 81,
+      "line": 85,
       "character": 146,
-      "last": 84,
+      "last": 88,
       "lastcharacter": 18,
       "metrics": {
         "complexity": 1,
@@ -193,9 +206,9 @@
     {
       "name": "(empty)",
       "param": null,
-      "line": 85,
+      "line": 89,
       "character": 26,
-      "last": 87,
+      "last": 91,
       "lastcharacter": 14,
       "metrics": {
         "complexity": 1,
@@ -209,9 +222,9 @@
         "req",
         "res"
       ],
-      "line": 92,
+      "line": 96,
       "character": 28,
-      "last": 94,
+      "last": 98,
       "lastcharacter": 6,
       "metrics": {
         "complexity": 1,
@@ -225,9 +238,9 @@
         "req",
         "res"
       ],
-      "line": 95,
+      "line": 99,
       "character": 25,
-      "last": 97,
+      "last": 101,
       "lastcharacter": 6,
       "metrics": {
         "complexity": 1,
@@ -248,7 +261,7 @@
       "raw": "Blocks are nested too deeply. ({a})",
       "code": "W073",
       "evidence": "            if (!isBackup) {",
-      "line": 73,
+      "line": 77,
       "character": 28,
       "scope": "(main)",
       "a": 2,
@@ -260,17 +273,17 @@
       "name": "module",
       "line": [
         1,
-        100,
-        100
+        104,
+        104
       ]
     },
     {
       "name": "_",
       "line": [
         1,
-        53,
         57,
-        100
+        61,
+        104
       ]
     },
     {
@@ -282,80 +295,80 @@
     {
       "name": "passport",
       "line": [
-        4,
-        16
+        7,
+        20
       ]
     },
     {
       "name": "User",
       "line": [
-        23
+        27
       ]
     },
     {
       "name": "fs",
       "line": [
-        30,
-        72,
-        74,
-        79
+        34,
+        76,
+        78,
+        83
       ]
     },
     {
       "name": "mongoose",
       "line": [
-        34,
-        57
+        38,
+        61
       ]
     },
     {
       "name": "gfs",
       "line": [
-        36
+        40
       ]
     },
     {
       "name": "pdf",
       "line": [
-        44
+        48
       ]
     },
     {
       "name": "moment",
       "line": [
-        54,
-        76
+        58,
+        80
       ]
     },
     {
       "name": "exec",
       "line": [
-        55,
-        81
+        59,
+        85
       ]
     },
     {
       "name": "async",
       "line": [
-        80
+        84
       ]
     },
     {
       "name": "database",
       "line": [
-        81
+        85
       ]
     },
     {
       "name": "Media",
       "line": [
-        93
+        97
       ]
     },
     {
       "name": "Config",
       "line": [
-        96
+        100
       ]
     }
   ],
@@ -365,13 +378,14 @@
   "unused": [
     {
       "name": "options",
-      "line": 31,
+      "line": 35,
       "character": 13
     }
   ],
   "member": {
     "exports": 3,
     "cloneDeep": 1,
+    "getTushar": 1,
     "authenticate": 2,
     "scope": 2,
     "failureRedirect": 2,

@@ -73,7 +73,9 @@ global["monguurl"] = require('monguurl');
 require('mongoose-middleware').initialize(mongoose);
 global["Schema"] = mongoose.Schema;
 global["Grid"] = require('gridfs-stream');
-global["gfs"] = Grid(mongoose.connections, mongoose);
+conn.once('open', function () {
+    global.gfs = Grid(conn.db, mongoose.mongo);
+});
 global["http"] = require('http');
 gfs.mongo = mongoose.mongo;
 

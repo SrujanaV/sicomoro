@@ -1,11 +1,15 @@
 module.exports = _.cloneDeep(require("sails-wohlig-controller"));
 var controller = {
+    getTushar: function () {
+        // Every thing is awesome
+    },
     loginFacebook: function (req, res) {
         passport.authenticate('facebook', {
             scope: ['public_profile', 'user_friends', 'email'],
             failureRedirect: '/'
         }, res.socialLogin)(req, res);
     },
+
     loginGoogle: function (req, res) {
         if (req.query.returnUrl) {
             req.session.returnUrl = req.query.returnUrl;
