@@ -72,10 +72,7 @@ global["validators"] = require('mongoose-validators');
 global["monguurl"] = require('monguurl');
 require('mongoose-middleware').initialize(mongoose);
 global["Schema"] = mongoose.Schema;
-global["Grid"] = require('gridfs-stream');
-conn.once('open', function () {
-    global.gfs = Grid(conn.db, mongoose.mongo);
-});
+
 global["http"] = require('http');
 gfs.mongo = mongoose.mongo;
 
