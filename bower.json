@@ -65,5 +65,8 @@
     "textAngular": "^1.5.16",
     "cleave.js": "^0.7.10",
     "angular-promise-buttons": "^0.1.21"
+  },
+  "resolutions": {
+    "angular": "1.6.6"
   }
 }
