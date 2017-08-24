@@ -74,7 +74,7 @@ require('mongoose-middleware').initialize(mongoose);
 global["Schema"] = mongoose.Schema;
 
 global["http"] = require('http');
-gfs.mongo = mongoose.mongo;
+
 
 //Image Library
 global["stream"] = require('stream');
