@@ -63,7 +63,6 @@ module.exports.globals = {
 };
 
 // Mongoose Globals
-global["mongoose"] = require('mongoose');
 global["ObjectId"] = mongoose.Types.ObjectId;
 global["deepPopulate"] = require('mongoose-deep-populate')(mongoose);
 global["uniqueValidator"] = require('mongoose-unique-validator');
