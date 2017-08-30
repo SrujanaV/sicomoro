@@ -9,26 +9,16 @@ module.exports = {
     index: function (req, res) {
         var fileNames = [];
         req.file("file").upload({
-            maxBytes: 10000000 // 10 MB Storage 1 MB = 10^6
-        }, function (err, uploadedFile) {
-            if (err) {
-                res.callback(err);
-            } else if (uploadedFile && uploadedFile.length > 0) {
-                async.concat(uploadedFile, function (n, callback) {
-                    Config.uploadFile(n.fd, function (err, value) {
-                        if (err) {
-                            callback(err);
-                        } else {
-                            callback(null, value.name);
-                        }
-                    });
-                }, res.callback);
-            } else {
-                res.callback(null, {
-                    value: false,
-                    data: "No files selected"
-                });
-            }
+            // ...any other options here... 
+            // adapter: require('skipper-gclouds'),
+            projectId: 'wohligerp',
+            keyFilename: 'keyFile.json',
+            bucket: 'wohlig',
+            public: true,
+        }, function (err, data) {
+            res.callback(err, _.map(data, function (n) {
+                return n.fd;
+            }));
         });
     },
     readFile: function (req, res) {

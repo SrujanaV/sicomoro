@@ -12,7 +12,7 @@
  * Check out the `tasks` directory instead.
  */
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
 
 	// Load the include-all library in order to require all of our grunt
@@ -23,8 +23,7 @@ module.exports = function(grunt) {
 	} catch (e0) {
 		try {
 			includeAll = require('sails/node_modules/include-all');
-		}
-		catch(e1) {
+		} catch (e1) {
 			console.error('Could not find `include-all` module.');
 			console.error('Skipping grunt tasks...');
 			console.error('To fix this, please run:');
@@ -71,7 +70,9 @@ module.exports = function(grunt) {
 
 	// (ensure that a default task exists)
 	if (!registerDefinitions.default) {
-		registerDefinitions.default = function (grunt) { grunt.registerTask('default', []); };
+		registerDefinitions.default = function (grunt) {
+			grunt.registerTask('default', []);
+		};
 	}
 
 	// Run task functions to configure Grunt.
