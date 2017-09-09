@@ -27,7 +27,7 @@ global["database"] = "database";
 
 mongoose.Promise = global.Promise;
 // var conn = mongoose.createConnection('mongodb://user:pass@localhost:port/database');
-global.mongourl = "mongodb://35.187.228.244:27017/" + database;
+global.mongourl = "mongodb://127.0.0.1:27017/" + database;
 var conn = mongoose.createConnection(mongourl);
 
 conn.on('open', function () {
