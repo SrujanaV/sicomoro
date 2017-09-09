@@ -63,7 +63,7 @@ module.exports.session = {
   // prefix: 'sess:',
 
 
-  url: 'mongodb://localhost:27017/' + global.database,
+  url: mongourl,
   collection: 'sessionsForServer',
   auto_reconnect: false,
   ssl: false,
