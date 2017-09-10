@@ -23,17 +23,27 @@
 process.chdir(__dirname);
 global.mongoose = require('mongoose');
 global["Grid"] = require('gridfs-stream');
-global["database"] = "database";
+global["database"] = "Enter Database Name";
 
 mongoose.Promise = global.Promise;
 // var conn = mongoose.createConnection('mongodb://user:pass@localhost:port/database');
-global.mongourl = "mongodb://127.0.0.1:27017/" + database;
-var conn = mongoose.createConnection(mongourl);
 
-conn.on('open', function () {
-    global.gfs = Grid(conn.db, mongoose.mongo);
-    mongoose.connection = conn;
+
+
+// var MongoClient = require('mongodb').MongoClient;
+
+// var uri = "mongodb://kay:myRealPassword@mycluster0-shard-00-00-wpeiv.mongodb.net:27017,mycluster0-shard-00-01-wpeiv.mongodb.net:27017,mycluster0-shard-00-02-wpeiv.mongodb.net:27017/admin?ssl=true&replicaSet=Mycluster0-shard-0&authSource=admin";
+// MongoClient.connect(uri, function(err, db) {
+//   db.close();
+// });
+
+global.mongourl = "mongodb://localhost:27017/" + database + "";
+mongoose.connect(mongourl, {
+    useMongoClient: true
+}, function (err, db) {
+    global.gfs = Grid(db, mongoose.mongo);
 });
+
 // Ensure a "sails" can be located:
 (function () {
     var sails;
