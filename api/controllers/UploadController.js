@@ -10,10 +10,9 @@ module.exports = {
         var fileNames = [];
         req.file("file").upload({
             adapter: require('skipper-gclouds'),
-            projectId: 'wohligerp',
             keyFilename: './config/storage/googleCloudStorageKey.json',
             bucket: storageBasket,
-            public: true,
+            public: true
         }, function (err, data) {
             res.callback(err, _.map(data, function (n) {
                 return n.fd;
