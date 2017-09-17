@@ -27,7 +27,7 @@ global["database"] = "database";
 
 mongoose.Promise = global.Promise;
 
-global.mongourl = "mongodb://wohlig:gaybu5PRbvCOnYNg@wohlig-shard-00-00-mampb.mongodb.net:27017,wohlig-shard-00-01-mampb.mongodb.net:27017,wohlig-shard-00-02-mampb.mongodb.net:27017/" + database + "?ssl=true&replicaSet=wohlig-shard-0&authSource=admin";
+global.mongourl = "<Enter MongoDb URl>";
 mongoose.connect(mongourl, {
     useMongoClient: true
 }, function (err, db) {
