@@ -11,7 +11,7 @@ module.exports = {
         req.file("file").upload({
             adapter: require('skipper-gclouds'),
             projectId: 'wohligerp',
-            keyFilename: 'googleCloudStorageKey.json',
+            keyFilename: './config/storage/googleCloudStorageKey.json',
             bucket: 'wohlig',
             public: true,
         }, function (err, data) {

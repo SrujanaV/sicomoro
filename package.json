@@ -62,7 +62,8 @@
     "sails-disk": "^0.10.10",
     "sails-wohlig-controller": "^0.0.4",
     "sails-wohlig-service": "^0.0.11",
-    "sendgrid": "^5.2.3"
+    "sendgrid": "^5.2.3",
+    "skipper-gclouds": "^1.0.1"
   },
   "scripts": {
     "debug": "node debug app.js",

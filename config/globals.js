@@ -75,6 +75,11 @@ global["Schema"] = mongoose.Schema;
 global["http"] = require('http');
 
 
+
+// Storage
+global.skipper = require('skipper-gclouds');
+
+
 //Image Library
 global["stream"] = require('stream');
 global["Jimp"] = require("jimp");
