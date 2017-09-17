@@ -23,21 +23,11 @@
 process.chdir(__dirname);
 global.mongoose = require('mongoose');
 global["Grid"] = require('gridfs-stream');
-global["database"] = "Enter Database Name";
+global["database"] = "database";
 
 mongoose.Promise = global.Promise;
-// var conn = mongoose.createConnection('mongodb://user:pass@localhost:port/database');
 
-
-
-// var MongoClient = require('mongodb').MongoClient;
-
-// var uri = "mongodb://kay:myRealPassword@mycluster0-shard-00-00-wpeiv.mongodb.net:27017,mycluster0-shard-00-01-wpeiv.mongodb.net:27017,mycluster0-shard-00-02-wpeiv.mongodb.net:27017/admin?ssl=true&replicaSet=Mycluster0-shard-0&authSource=admin";
-// MongoClient.connect(uri, function(err, db) {
-//   db.close();
-// });
-
-global.mongourl = "mongodb://localhost:27017/" + database + "";
+global.mongourl = "mongodb://wohlig:gaybu5PRbvCOnYNg@wohlig-shard-00-00-mampb.mongodb.net:27017,wohlig-shard-00-01-mampb.mongodb.net:27017,wohlig-shard-00-02-mampb.mongodb.net:27017/" + database + "?ssl=true&replicaSet=wohlig-shard-0&authSource=admin";
 mongoose.connect(mongourl, {
     useMongoClient: true
 }, function (err, db) {
