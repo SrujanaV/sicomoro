@@ -40,7 +40,6 @@ module.exports = {
         // } else {
         //     res.callback("No Such File Found");
         // }
-        console.log("https://storage.googleapis.com/" + storageBasket + "/" + req.query.file);
         return res.redirect("https://storage.googleapis.com/" + storageBasket + "/" + req.query.file);
     },
     // readAttachment: function(req, res){
