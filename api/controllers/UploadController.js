@@ -9,10 +9,9 @@ module.exports = {
     index: function (req, res) {
         var fileNames = [];
         req.file("file").upload({
-            // ...any other options here... 
-            // adapter: require('skipper-gclouds'),
+            adapter: require('skipper-gclouds'),
             projectId: 'wohligerp',
-            keyFilename: 'keyFile.json',
+            keyFilename: 'googleCloudStorageKey.json',
             bucket: 'wohlig',
             public: true,
         }, function (err, data) {
