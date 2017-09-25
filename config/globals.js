@@ -62,6 +62,15 @@ module.exports.globals = {
     // models: true
 };
 
+global.mongoose = require('mongoose');
+global.database = "database";
+mongoose.Promise = global.Promise;
+global.mongourl = "mongodb://localhost:27017/" + database;
+mongoose.connect(mongourl, {
+    useMongoClient: true
+}, function (err, db) {});
+
+
 // Mongoose Globals
 global["ObjectId"] = mongoose.Types.ObjectId;
 global["deepPopulate"] = require('mongoose-deep-populate')(mongoose);

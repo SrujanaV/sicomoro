@@ -1,28 +1,15 @@
 {
   "functions": [
     {
-      "name": "getTushar",
-      "param": null,
-      "line": 3,
-      "character": 26,
-      "last": 5,
-      "lastcharacter": 6,
-      "metrics": {
-        "complexity": 1,
-        "parameters": 0,
-        "statements": 0
-      }
-    },
-    {
-      "name": "loginFacebook",
+      "name": "modify",
       "param": [
-        "req",
-        "res"
+        "val",
+        "data"
       ],
-      "line": 6,
-      "character": 30,
-      "last": 11,
-      "lastcharacter": 6,
+      "line": 17,
+      "character": 31,
+      "last": 19,
+      "lastcharacter": 14,
       "metrics": {
         "complexity": 1,
         "parameters": 2,
@@ -30,156 +17,141 @@
       }
     },
     {
-      "name": "loginGoogle",
+      "name": "modify",
       "param": [
-        "req",
-        "res"
+        "val",
+        "data"
       ],
-      "line": 13,
-      "character": 28,
-      "last": 24,
+      "line": 29,
+      "character": 31,
+      "last": 31,
+      "lastcharacter": 14,
+      "metrics": {
+        "complexity": 1,
+        "parameters": 2,
+        "statements": 1
+      }
+    },
+    {
+      "name": "modify",
+      "param": [
+        "val",
+        "data"
+      ],
+      "line": 34,
+      "character": 31,
+      "last": 36,
+      "lastcharacter": 14,
+      "metrics": {
+        "complexity": 1,
+        "parameters": 2,
+        "statements": 1
+      }
+    },
+    {
+      "name": "existsSocial",
+      "param": [
+        "user",
+        "callback"
+      ],
+      "line": 89,
+      "character": 29,
+      "last": 140,
       "lastcharacter": 6,
+      "metrics": {
+        "complexity": 1,
+        "parameters": 2,
+        "statements": 2
+      }
+    },
+    {
+      "name": "(empty)",
+      "param": [
+        "err",
+        "data"
+      ],
+      "line": 94,
+      "character": 27,
+      "last": 139,
+      "lastcharacter": 10,
+      "metrics": {
+        "complexity": 6,
+        "parameters": 2,
+        "statements": 20
+      }
+    },
+    {
+      "name": "(empty)",
+      "param": [
+        "err",
+        "data2"
+      ],
+      "line": 118,
+      "character": 53,
+      "last": 129,
+      "lastcharacter": 18,
       "metrics": {
         "complexity": 2,
         "parameters": 2,
-        "statements": 3
+        "statements": 8
+      }
+    },
+    {
+      "name": "(empty)",
+      "param": null,
+      "line": 136,
+      "character": 37,
+      "last": 136,
+      "lastcharacter": 41,
+      "metrics": {
+        "complexity": 1,
+        "parameters": 0,
+        "statements": 0
       }
     },
     {
       "name": "profile",
       "param": [
-        "req",
-        "res"
+        "data",
+        "callback",
+        "getGoogle"
       ],
-      "line": 25,
+      "line": 141,
       "character": 24,
-      "last": 31,
+      "last": 157,
       "lastcharacter": 6,
       "metrics": {
         "complexity": 2,
-        "parameters": 2,
-        "statements": 3
-      }
-    },
-    {
-      "name": "pdf",
-      "param": [
-        "req",
-        "res"
-      ],
-      "line": 32,
-      "character": 20,
-      "last": 51,
-      "lastcharacter": 6,
-      "metrics": {
-        "complexity": 1,
-        "parameters": 2,
-        "statements": 7
-      }
-    },
-    {
-      "name": "(empty)",
-      "param": null,
-      "line": 43,
-      "character": 44,
-      "last": 47,
-      "lastcharacter": 10,
-      "metrics": {
-        "complexity": 1,
-        "parameters": 0,
-        "statements": 1
+        "parameters": 3,
+        "statements": 4
       }
     },
     {
       "name": "(empty)",
       "param": [
         "err",
-        "stream"
+        "data"
       ],
-      "line": 48,
-      "character": 45,
-      "last": 50,
+      "line": 148,
+      "character": 32,
+      "last": 156,
       "lastcharacter": 10,
-      "metrics": {
-        "complexity": 1,
-        "parameters": 2,
-        "statements": 1
-      }
-    },
-    {
-      "name": "backupDatabase",
-      "param": [
-        "req",
-        "res"
-      ],
-      "line": 52,
-      "character": 31,
-      "last": 95,
-      "lastcharacter": 6,
       "metrics": {
         "complexity": 3,
         "parameters": 2,
-        "statements": 17
+        "statements": 4
       }
     },
     {
-      "name": "(empty)",
+      "name": "updateAccessToken",
       "param": [
-        "n"
+        "id",
+        "accessToken"
       ],
-      "line": 57,
-      "character": 35,
-      "last": 60,
-      "lastcharacter": 14,
-      "metrics": {
-        "complexity": 1,
-        "parameters": 1,
-        "statements": 2
-      }
-    },
-    {
-      "name": "(empty)",
-      "param": [
-        "err",
-        "stdout",
-        "stderr"
-      ],
-      "line": 59,
-      "character": 69,
-      "last": 59,
-      "lastcharacter": 92,
-      "metrics": {
-        "complexity": 1,
-        "parameters": 3,
-        "statements": 0
-      }
-    },
-    {
-      "name": "(empty)",
-      "param": [
-        "Model",
-        "key"
-      ],
-      "line": 61,
-      "character": 57,
-      "last": 67,
-      "lastcharacter": 14,
-      "metrics": {
-        "complexity": 1,
-        "parameters": 2,
-        "statements": 2
-      }
-    },
-    {
-      "name": "(empty)",
-      "param": [
-        "obj",
-        "callback"
-      ],
-      "line": 84,
-      "character": 46,
-      "last": 89,
-      "lastcharacter": 14,
+      "line": 158,
+      "character": 34,
+      "last": 165,
+      "lastcharacter": 6,
       "metrics": {
         "complexity": 1,
         "parameters": 2,
@@ -189,27 +161,26 @@
     {
       "name": "(empty)",
       "param": [
-        "data1",
-        "data2",
-        "data3"
+        "err",
+        "data"
       ],
-      "line": 85,
-      "character": 146,
-      "last": 88,
-      "lastcharacter": 18,
+      "line": 161,
+      "character": 27,
+      "last": 164,
+      "lastcharacter": 10,
       "metrics": {
         "complexity": 1,
-        "parameters": 3,
+        "parameters": 2,
         "statements": 2
       }
     },
     {
       "name": "(empty)",
       "param": null,
-      "line": 89,
-      "character": 26,
-      "last": 91,
-      "lastcharacter": 14,
+      "line": 163,
+      "character": 33,
+      "last": 163,
+      "lastcharacter": 37,
       "metrics": {
         "complexity": 1,
         "parameters": 0,
@@ -219,33 +190,17 @@
     {
       "name": "getAllMedia",
       "param": [
-        "req",
-        "res"
+        "data",
+        "callback"
       ],
-      "line": 96,
+      "line": 172,
       "character": 28,
-      "last": 98,
+      "last": 174,
       "lastcharacter": 6,
       "metrics": {
         "complexity": 1,
         "parameters": 2,
-        "statements": 1
-      }
-    },
-    {
-      "name": "sendmail",
-      "param": [
-        "req",
-        "res"
-      ],
-      "line": 99,
-      "character": 25,
-      "last": 101,
-      "lastcharacter": 6,
-      "metrics": {
-        "complexity": 1,
-        "parameters": 2,
-        "statements": 1
+        "statements": 0
       }
     }
   ],
@@ -260,9 +215,20 @@
       "id": "(error)",
       "raw": "Blocks are nested too deeply. ({a})",
       "code": "W073",
-      "evidence": "            if (!isBackup) {",
-      "line": 77,
-      "character": 28,
+      "evidence": "                if (user.emails && user.emails.length > 0) {",
+      "line": 106,
+      "character": 60,
+      "scope": "(main)",
+      "a": 2,
+      "reason": "Blocks are nested too deeply. (2)"
+    },
+    {
+      "id": "(error)",
+      "raw": "Blocks are nested too deeply. ({a})",
+      "code": "W073",
+      "evidence": "                if (user.image && user.image.url) {",
+      "line": 115,
+      "character": 51,
       "scope": "(main)",
       "a": 2,
       "reason": "Blocks are nested too deeply. (2)"
@@ -270,167 +236,165 @@
   ],
   "implieds": [
     {
-      "name": "module",
-      "line": [
-        1,
-        104,
-        104
-      ]
-    },
-    {
-      "name": "_",
-      "line": [
-        1,
-        57,
-        61,
-        104
-      ]
-    },
-    {
-      "name": "require",
+      "name": "Schema",
       "line": [
         1
       ]
     },
     {
-      "name": "passport",
+      "name": "validators",
       "line": [
-        7,
-        20
-      ]
-    },
-    {
-      "name": "User",
-      "line": [
-        27
-      ]
-    },
-    {
-      "name": "fs",
-      "line": [
-        34,
-        76,
-        78,
-        83
-      ]
-    },
-    {
-      "name": "mongoose",
-      "line": [
-        38,
-        61
-      ]
-    },
-    {
-      "name": "gfs",
-      "line": [
-        40
-      ]
-    },
-    {
-      "name": "pdf",
-      "line": [
-        48
+        9
       ]
     },
     {
       "name": "moment",
       "line": [
-        58,
-        80
+        18,
+        35
       ]
     },
     {
-      "name": "exec",
+      "name": "deepPopulate",
       "line": [
-        59,
+        75
+      ]
+    },
+    {
+      "name": "uniqueValidator",
+      "line": [
+        82
+      ]
+    },
+    {
+      "name": "timestamps",
+      "line": [
+        83
+      ]
+    },
+    {
+      "name": "module",
+      "line": [
+        85,
+        176,
+        176
+      ]
+    },
+    {
+      "name": "mongoose",
+      "line": [
         85
       ]
     },
     {
-      "name": "async",
+      "name": "_",
       "line": [
-        84
+        87,
+        97,
+        108,
+        176
       ]
     },
     {
-      "name": "database",
+      "name": "require",
       "line": [
-        85
+        87
       ]
     },
     {
-      "name": "Media",
-      "line": [
-        97
-      ]
-    },
-    {
-      "name": "Config",
+      "name": "uid",
       "line": [
         100
+      ]
+    },
+    {
+      "name": "env",
+      "line": [
+        108
+      ]
+    },
+    {
+      "name": "data3",
+      "line": [
+        122,
+        123,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "name": "User",
+      "line": [
+        146,
+        159
       ]
     }
   ],
   "globals": [
-    "controller"
-  ],
-  "unused": [
-    {
-      "name": "options",
-      "line": 35,
-      "character": 13
-    }
+    "schema",
+    "exports",
+    "model",
+    "String",
+    "Date"
   ],
   "member": {
-    "exports": 3,
-    "cloneDeep": 1,
-    "getTushar": 1,
-    "authenticate": 2,
-    "scope": 2,
-    "failureRedirect": 2,
-    "socialLogin": 2,
-    "loginFacebook": 1,
-    "query": 2,
-    "returnUrl": 3,
-    "session": 1,
-    "loginGoogle": 1,
-    "body": 4,
-    "accessToken": 1,
-    "profile": 2,
-    "callback": 5,
-    "readFileSync": 1,
-    "format": 3,
-    "Types": 1,
-    "ObjectId": 1,
-    "createWriteStream": 1,
-    "filename": 1,
-    "on": 1,
+    "type": 11,
+    "required": 1,
+    "excel": 4,
     "name": 7,
-    "create": 1,
-    "toStream": 1,
-    "pipe": 1,
-    "pdf": 1,
-    "connection": 2,
-    "setTimeout": 2,
-    "host": 1,
-    "search": 1,
-    "times": 1,
-    "subtract": 1,
-    "map": 1,
-    "models": 1,
-    "collection": 1,
-    "collectionName": 1,
-    "key": 4,
-    "json": 1,
-    "push": 2,
-    "existsSync": 1,
-    "mkdirSync": 2,
-    "eachSeries": 1,
-    "backupDatabase": 1,
-    "getAllMedia": 2,
-    "sendEmail": 1,
-    "sendmail": 1,
+    "isEmail": 1,
+    "validate": 1,
+    "unique": 1,
+    "email": 3,
+    "format": 2,
+    "modify": 3,
+    "dob": 2,
+    "default": 6,
+    "photo": 2,
+    "password": 3,
+    "forgotPassword": 3,
+    "mobile": 1,
+    "otp": 3,
+    "index": 2,
+    "accessToken": 4,
+    "googleAccessToken": 6,
+    "googleRefreshToken": 3,
+    "socialId": 2,
+    "socialProvider": 2,
+    "oauthLogin": 4,
+    "enum": 1,
+    "accessLevel": 2,
+    "plugin": 3,
+    "select": 1,
+    "user": 1,
+    "populate": 1,
+    "exports": 3,
+    "model": 1,
+    "cloneDeep": 1,
+    "findOne": 3,
+    "id": 2,
+    "oauthLogin.socialId": 1,
+    "provider": 2,
+    "oauthLogin.socialProvider": 1,
+    "exec": 3,
+    "isEmpty": 1,
+    "displayName": 1,
+    "emails": 4,
+    "length": 1,
+    "value": 1,
+    "indexOf": 1,
+    "image": 3,
+    "url": 2,
+    "saveData": 1,
+    "toObject": 1,
+    "save": 2,
+    "existsSocial": 1,
+    "profile": 1,
+    "_id": 1,
+    "updateAccessToken": 1,
+    "getAllMedia": 1,
     "assign": 1
   }
 }
