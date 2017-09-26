@@ -1,15 +1,15 @@
 {
   "functions": [
     {
-      "name": "modify",
+      "name": "index",
       "param": [
-        "val",
-        "data"
+        "req",
+        "res"
       ],
-      "line": 17,
-      "character": 31,
-      "last": 19,
-      "lastcharacter": 14,
+      "line": 2,
+      "character": 22,
+      "last": 4,
+      "lastcharacter": 6,
       "metrics": {
         "complexity": 1,
         "parameters": 2,
@@ -17,15 +17,15 @@
       }
     },
     {
-      "name": "modify",
+      "name": "download",
       "param": [
-        "val",
-        "data"
+        "req",
+        "res"
       ],
-      "line": 29,
-      "character": 31,
-      "last": 31,
-      "lastcharacter": 14,
+      "line": 5,
+      "character": 25,
+      "last": 7,
+      "lastcharacter": 6,
       "metrics": {
         "complexity": 1,
         "parameters": 2,
@@ -33,30 +33,14 @@
       }
     },
     {
-      "name": "modify",
+      "name": "backend",
       "param": [
-        "val",
-        "data"
+        "req",
+        "res"
       ],
-      "line": 34,
-      "character": 31,
-      "last": 36,
-      "lastcharacter": 14,
-      "metrics": {
-        "complexity": 1,
-        "parameters": 2,
-        "statements": 1
-      }
-    },
-    {
-      "name": "existsSocial",
-      "param": [
-        "user",
-        "callback"
-      ],
-      "line": 89,
-      "character": 29,
-      "last": 140,
+      "line": 8,
+      "character": 24,
+      "last": 17,
       "lastcharacter": 6,
       "metrics": {
         "complexity": 1,
@@ -65,92 +49,75 @@
       }
     },
     {
-      "name": "(empty)",
+      "name": "gitPull",
       "param": [
-        "err",
-        "data"
+        "req",
+        "res"
       ],
-      "line": 94,
-      "character": 27,
-      "last": 139,
-      "lastcharacter": 10,
-      "metrics": {
-        "complexity": 6,
-        "parameters": 2,
-        "statements": 20
-      }
-    },
-    {
-      "name": "(empty)",
-      "param": [
-        "err",
-        "data2"
-      ],
-      "line": 118,
-      "character": 53,
-      "last": 129,
-      "lastcharacter": 18,
+      "line": 18,
+      "character": 24,
+      "last": 47,
+      "lastcharacter": 6,
       "metrics": {
         "complexity": 2,
         "parameters": 2,
-        "statements": 8
+        "statements": 5
+      }
+    },
+    {
+      "name": "gitPull",
+      "param": null,
+      "line": 19,
+      "character": 26,
+      "last": 29,
+      "lastcharacter": 10,
+      "metrics": {
+        "complexity": 1,
+        "parameters": 0,
+        "statements": 1
       }
     },
     {
       "name": "(empty)",
-      "param": null,
-      "line": 136,
-      "character": 37,
-      "last": 136,
-      "lastcharacter": 41,
-      "metrics": {
-        "complexity": 1,
-        "parameters": 0,
-        "statements": 0
-      }
-    },
-    {
-      "name": "profile",
       "param": [
-        "data",
-        "callback",
-        "getGoogle"
+        "error",
+        "stdout",
+        "stderr"
       ],
-      "line": 141,
-      "character": 24,
-      "last": 157,
-      "lastcharacter": 6,
+      "line": 20,
+      "character": 40,
+      "last": 28,
+      "lastcharacter": 14,
       "metrics": {
         "complexity": 2,
         "parameters": 3,
-        "statements": 4
+        "statements": 3
       }
     },
     {
-      "name": "(empty)",
+      "name": "decryptData",
       "param": [
-        "err",
-        "data"
+        "text"
       ],
-      "line": 148,
-      "character": 32,
-      "last": 156,
+      "line": 31,
+      "character": 30,
+      "last": 41,
       "lastcharacter": 10,
       "metrics": {
         "complexity": 3,
-        "parameters": 2,
-        "statements": 4
+        "parameters": 1,
+        "statements": 5
       }
     },
     {
-      "name": "updateAccessToken",
+      "name": "demo",
       "param": [
-        "id",
-        "accessToken"
+        "req",
+        "res"
       ],
-      "line": 158,
-      "character": 34,
-      "last": 165,
+      "line": 48,
+      "character": 21,
+      "last": 56,
       "lastcharacter": 6,
       "metrics": {
         "complexity": 1,
@@ -162,45 +129,62 @@
       "name": "(empty)",
       "param": [
         "err",
-        "data"
+        "view"
       ],
-      "line": 161,
-      "character": 27,
-      "last": 164,
+      "line": 53,
+      "character": 22,
+      "last": 55,
       "lastcharacter": 10,
       "metrics": {
         "complexity": 1,
         "parameters": 2,
-        "statements": 2
+        "statements": 1
       }
     },
     {
-      "name": "(empty)",
-      "param": null,
-      "line": 163,
-      "character": 33,
-      "last": 163,
-      "lastcharacter": 37,
-      "metrics": {
-        "complexity": 1,
-        "parameters": 0,
-        "statements": 0
-      }
-    },
-    {
-      "name": "getAllMedia",
+      "name": "orderReturn",
       "param": [
-        "data",
-        "callback"
+        "req",
+        "res"
       ],
-      "line": 172,
+      "line": 57,
       "character": 28,
-      "last": 174,
+      "last": 69,
       "lastcharacter": 6,
       "metrics": {
         "complexity": 1,
         "parameters": 2,
-        "statements": 0
+        "statements": 1
+      }
+    },
+    {
+      "name": "(empty)",
+      "param": [
+        "callback"
+      ],
+      "line": 59,
+      "character": 23,
+      "last": 64,
+      "lastcharacter": 14,
+      "metrics": {
+        "complexity": 1,
+        "parameters": 1,
+        "statements": 1
+      }
+    },
+    {
+      "name": "(empty)",
+      "param": [
+        "callback"
+      ],
+      "line": 65,
+      "character": 23,
+      "last": 67,
+      "lastcharacter": 14,
+      "metrics": {
+        "complexity": 1,
+        "parameters": 1,
+        "statements": 1
       }
     }
   ],
@@ -215,9 +199,9 @@
       "id": "(error)",
       "raw": "Blocks are nested too deeply. ({a})",
       "code": "W073",
-      "evidence": "                if (user.emails && user.emails.length > 0) {",
-      "line": 106,
-      "character": 60,
+      "evidence": "                if (moment.unix(text).isBetween(moment().add(-1, \"minute\"), moment().add(1, \"minute\"))) {",
+      "line": 33,
+      "character": 105,
       "scope": "(main)",
       "a": 2,
       "reason": "Blocks are nested too deeply. (2)"
@@ -226,9 +210,9 @@
       "id": "(error)",
       "raw": "Blocks are nested too deeply. ({a})",
       "code": "W073",
-      "evidence": "                if (user.image && user.image.url) {",
-      "line": 115,
-      "character": 51,
+      "evidence": "                } else {",
+      "line": 35,
+      "character": 24,
       "scope": "(main)",
       "a": 2,
       "reason": "Blocks are nested too deeply. (2)"
@@ -236,165 +220,128 @@
   ],
   "implieds": [
     {
-      "name": "Schema",
+      "name": "module",
       "line": [
         1
       ]
     },
     {
-      "name": "validators",
+      "name": "Config",
       "line": [
-        9
-      ]
-    },
-    {
-      "name": "moment",
-      "line": [
-        18,
-        35
-      ]
-    },
-    {
-      "name": "deepPopulate",
-      "line": [
-        75
-      ]
-    },
-    {
-      "name": "uniqueValidator",
-      "line": [
-        82
-      ]
-    },
-    {
-      "name": "timestamps",
-      "line": [
-        83
-      ]
-    },
-    {
-      "name": "module",
-      "line": [
-        85,
-        176,
-        176
-      ]
-    },
-    {
-      "name": "mongoose",
-      "line": [
-        85
-      ]
-    },
-    {
-      "name": "_",
-      "line": [
-        87,
-        97,
-        108,
-        176
+        6
       ]
     },
     {
       "name": "require",
       "line": [
-        87
+        9
       ]
     },
     {
-      "name": "uid",
+      "name": "sails",
       "line": [
-        100
+        9,
+        49
       ]
     },
     {
-      "name": "env",
+      "name": "jsFilesBackend",
       "line": [
-        108
+        11
       ]
     },
     {
-      "name": "data3",
+      "name": "exec",
       "line": [
-        122,
-        123,
-        124,
-        125,
-        126,
-        127
+        20
+      ]
+    },
+    {
+      "name": "moment",
+      "line": [
+        33,
+        33,
+        33
+      ]
+    },
+    {
+      "name": "async",
+      "line": [
+        58,
+        60
+      ]
+    },
+    {
+      "name": "Order",
+      "line": [
+        61
       ]
     },
     {
       "name": "User",
       "line": [
-        146,
-        159
+        62
+      ]
+    },
+    {
+      "name": "Product",
+      "line": [
+        66
+      ]
+    },
+    {
+      "name": "callback",
+      "line": [
+        68
       ]
     }
   ],
-  "globals": [
-    "schema",
-    "exports",
-    "model",
-    "String",
-    "Date"
-  ],
   "member": {
-    "type": 11,
-    "required": 1,
-    "excel": 4,
-    "name": 7,
-    "isEmail": 1,
-    "validate": 1,
-    "unique": 1,
-    "email": 3,
-    "format": 2,
-    "modify": 3,
-    "dob": 2,
-    "default": 6,
-    "photo": 2,
-    "password": 3,
-    "forgotPassword": 3,
-    "mobile": 1,
-    "otp": 3,
-    "index": 2,
-    "accessToken": 4,
-    "googleAccessToken": 6,
-    "googleRefreshToken": 3,
-    "socialId": 2,
-    "socialProvider": 2,
-    "oauthLogin": 4,
-    "enum": 1,
-    "accessLevel": 2,
-    "plugin": 3,
-    "select": 1,
-    "user": 1,
-    "populate": 1,
-    "exports": 3,
-    "model": 1,
-    "cloneDeep": 1,
-    "findOne": 3,
-    "id": 2,
-    "oauthLogin.socialId": 1,
-    "provider": 2,
-    "oauthLogin.socialProvider": 1,
-    "exec": 3,
-    "isEmpty": 1,
-    "displayName": 1,
-    "emails": 4,
-    "length": 1,
-    "value": 1,
-    "indexOf": 1,
-    "image": 3,
-    "url": 2,
-    "saveData": 1,
-    "toObject": 1,
-    "save": 2,
-    "existsSocial": 1,
-    "profile": 1,
-    "_id": 1,
-    "updateAccessToken": 1,
-    "getAllMedia": 1,
-    "assign": 1
+    "exports": 1,
+    "metaView": 1,
+    "index": 1,
+    "readUploaded": 1,
+    "param": 1,
+    "download": 1,
+    "config": 1,
+    "environment": 1,
+    "view": 1,
+    "jsFiles": 1,
+    "title": 1,
+    "description": 1,
+    "keywords": 1,
+    "realHost": 1,
+    "adminurl": 1,
+    "backend": 1,
+    "callback": 1,
+    "stdout": 1,
+    "stderr": 1,
+    "unix": 1,
+    "isBetween": 1,
+    "add": 2,
+    "notFound": 3,
+    "params": 3,
+    "data": 2,
+    "gitPull": 1,
+    "renderView": 1,
+    "name": 1,
+    "lastname": 1,
+    "hobbies": 1,
+    "send": 1,
+    "demo": 1,
+    "waterfall": 1,
+    "parallel": 1,
+    "removeOrder": 1,
+    "body": 4,
+    "order": 4,
+    "_id": 2,
+    "removeOrderFromUser": 1,
+    "addBalance": 1,
+    "amount": 1,
+    "addUserBalance": 1,
+    "modifyQuantity": 1,
+    "product": 2,
+    "quantity": 1,
+    "orderReturn": 1
   }
 }
