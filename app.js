@@ -21,18 +21,6 @@
 // Ensure we're in the project directory, so relative paths work as expected
 // no matter where we actually lift from.
 process.chdir(__dirname);
-global.mongoose = require('mongoose');
-global["Grid"] = require('gridfs-stream');
-global["database"] = "database";
-
-mongoose.Promise = global.Promise;
-
-global.mongourl = "<Enter MongoDb URl>";
-mongoose.connect(mongourl, {
-    useMongoClient: true
-}, function (err, db) {
-    global.gfs = Grid(db, mongoose.mongo);
-});
 
 // Ensure a "sails" can be located:
 (function () {

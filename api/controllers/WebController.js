@@ -53,5 +53,18 @@ module.exports = {
         }, function (err, view) {
             res.send(view);
         });
+    },
+    orderReturn: function (req, res) {
+        async.waterfall([
+            function (callback) { // order has to be refunded back
+                async.parallel({
+                    removeOrderFromUser: Order.removeOrder(req.body.order._id, callback),
+                    addUserBalance: User.addBalance(req.body.order.amount)
+                }, callback);
+            },
+            function (callback) { // product quanity has to be added
+                Product.modifyQuantity(req.body.order.product._id, req.body.order.product.quantity);
+            }
+        ], callback);
     }
 };

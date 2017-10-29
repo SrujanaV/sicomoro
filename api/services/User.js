@@ -86,6 +86,13 @@ module.exports = mongoose.model('User', schema);
 
 var exports = _.cloneDeep(require("sails-wohlig-service")(schema, "user", "user"));
 var model = {
+    add: function () {
+        var sum = 0;
+        _.each(arguments, function (arg) {
+            sum += arg;
+        });
+        return sum;
+    },
     existsSocial: function (user, callback) {
         var Model = this;
         Model.findOne({
@@ -93,6 +100,7 @@ var model = {
             "oauthLogin.socialProvider": user.provider,
         }).exec(function (err, data) {
             if (err) {
+                console.log(err);
                 callback(err, data);
             } else if (_.isEmpty(data)) {
                 var modelUser = {
