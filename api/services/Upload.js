@@ -56,14 +56,7 @@ var model = {
                     callback(err);
                 } else {
                     if (fileObj.width || fileObj.height) {
-                        // var finalObject = _.find(data.sizes, function (size) {
-                        //     return (size.width == fileObj.width && size.height == fileObj.height && size.style == fileObj.style);
-                        // });
-                        // if (finalObject) {
-                        //     callback(null, finalObject);
-                        // } else {
                         Upload.generateFile(data, fileObj, callback);
-                        // }
                     } else {
                         callback(null, data);
                     }
