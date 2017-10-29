@@ -64,6 +64,7 @@ module.exports.globals = {
 
 global.mongoose = require('mongoose');
 global.database = "database";
+global.storageBucket = "wohlig";
 mongoose.Promise = global.Promise;
 global.mongourl = "mongodb://localhost:27017/" + database;
 mongoose.connect(mongourl, {
@@ -71,63 +72,69 @@ mongoose.connect(mongourl, {
 }, function (err, db) {});
 
 
+
 // Mongoose Globals
-global["ObjectId"] = mongoose.Types.ObjectId;
-global["deepPopulate"] = require('mongoose-deep-populate')(mongoose);
-global["uniqueValidator"] = require('mongoose-unique-validator');
-global["timestamps"] = require('mongoose-timestamp');
-global["validators"] = require('mongoose-validators');
-global["monguurl"] = require('monguurl');
+global.ObjectId = mongoose.Types.ObjectId;
+global.deepPopulate = require('mongoose-deep-populate')(mongoose);
+global.uniqueValidator = require('mongoose-unique-validator');
+global.timestamps = require('mongoose-timestamp');
+global.validators = require('mongoose-validators');
+global.monguurl = require('monguurl');
 require('mongoose-middleware').initialize(mongoose);
-global["Schema"] = mongoose.Schema;
+global.Schema = mongoose.Schema;
 
-global["http"] = require('http');
 
+global.http = require('http');
 
 
 // Storage
 global.skipper = require('skipper-gclouds');
-
+global.gCloudKey = './config/storage/googleCloudStorageKey.json';
+global.Storage = require('@google-cloud/storage');
+global.storage = Storage({
+    keyFilename: gCloudKey
+});
+global.md5 = require("md5");
 
 //Image Library
-global["stream"] = require('stream');
-global["Jimp"] = require("jimp");
+global.stream = require('stream');
+global.Jimp = require("jimp");
 
 // Util Globals
-global["moment"] = require("moment");
-global["exec"] = require('child_process').exec;
-global["_"] = require('lodash');
-global["chalk"] = require('chalk');
-global["uid"] = require('rand-token').uid;
-global["request"] = require('request');
-global["fs"] = require('fs');
-global["json2xls"] = require('json2xls');
-global["xlsx"] = require('node-xlsx').default;
-global["async"] = require('async');
+global.moment = require("moment");
+global.exec = require('child_process').exec;
+global._ = require('lodash');
+global.chalk = require('chalk');
+global.uid = require('rand-token').uid;
+global.request = require('request');
+global.fs = require('fs');
+global.json2xls = require('json2xls');
+global.xlsx = require('node-xlsx').default;
+global.async = require('async');
 // global["pdf"] = require('html-pdf');
 
 // passport Globals
-global["passport"] = require('passport');
-global["LocalStrategy"] = require('passport-local').Strategy;
-global["FacebookStrategy"] = require('passport-facebook').Strategy;
-global["TwitterStrategy"] = require('passport-twitter').Strategy;
-global["GoogleStrategy"] = require('passport-google-auth').Strategy;
+global.passport = require('passport');
+global.LocalStrategy = require('passport-local').Strategy;
+global.FacebookStrategy = require('passport-facebook').Strategy;
+global.TwitterStrategy = require('passport-twitter').Strategy;
+global.GoogleStrategy = require('passport-google-auth').Strategy;
 
 // Files to Import
-global["jsFiles"] = require("../frontend/files.js");
-global["jsFilesBackend"] = require("../backend/files.js");
+global.jsFiles = require("../frontend/files.js");
+global.jsFilesBackend = require("../backend/files.js");
 
 //colored console
-global["blue"] = function (data) {
+global.blue = function (data) {
     console.log(chalk.blue(data));
 };
-global["red"] = function (data) {
+global.red = function (data) {
     console.log(chalk.red(data));
 };
-global["green"] = function (data) {
+global.green = function (data) {
     console.log(chalk.green(data));
 };
-global["log"] = function (data) {
+global.log = function (data) {
     console.log(data);
 };
 
@@ -136,7 +143,7 @@ global["log"] = function (data) {
 
 
 if (process.env.NODE_ENV && process.env.NODE_ENV === "production") {
-    global["env"] = require("./env/production.js");
+    global.env = require("./env/production.js");
 } else {
-    global["env"] = require("./env/development.js");
+    global.env = require("./env/development.js");
 }
