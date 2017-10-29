@@ -151,7 +151,7 @@ module.exports = {
     },
     readFile: function (req, res) {
         Upload.findFile(req.query, function (err, data) {
-            if (err) {
+            if (err || _.isEmpty(data)) {
                 res.callback(err);
             } else {
                 res.redirect("https://storage.googleapis.com/" + storageBucket + "/" + data.storageName);

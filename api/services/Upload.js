@@ -90,7 +90,6 @@ var model = {
         if (finalObject) {
             callback(null, finalObject);
         } else {
-
             Jimp.read(data.location, function (err, image) {
                 image[resizeVal.style](resizeVal.width, resizeVal.height).quality(60).getBuffer(image.getMIME(), function (err, buffer) {
                     fileObj.storageName = md5(JSON.stringify(fileObj)) + data.storageName;
@@ -103,15 +102,11 @@ var model = {
                     });
                     wstream.write(buffer);
                     wstream.end();
-                    wstream.on('finish', function (err, suc) {
-                        console.log(suc);
+                    wstream.on('finish', function () {
                         data.sizes.push(fileObj);
                         data.save();
                         callback(null, fileObj);
                     });
-
-
-
                 });
             });
         }
